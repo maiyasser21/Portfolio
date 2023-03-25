@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mai Yasser</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2100f00b30.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <!-- <div class="light">
+          <label for="toggle" class="toggle">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+            <span class="ball"></span>
+          </label>
+        </div> -->
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>Hello, This is <span>Mai Yasser</span></h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/istockphoto-1358013032-170667a.jpg" alt="#" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Highly skilled software engineer designing, developing, and
+              testing software applications.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('courses')">Courses</p>
+              <p class="tab-links" onclick="opentab('skills')">
+                Technical Skills
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>2022-2023</span><br />9-Month Diploma (ITI) Information
+                  Technology Institute (MCIT) Ministry Of Communications And
+                  information Technology , Internet of Things Applications
+                  development ,New Capital Branch.
+                </li>
+                <li>
+                  <span>2017-2022</span><br />Bachelor Degree of Computers and
+                  Automatic Control Engineering, Tanta University <br />Grade:
+                  Very Good.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="courses">
+              <ul>
+                <li>
+                  <span
+                    >Embedded Systems Fundamentals, Alexandria Training
+                    Centre</span
+                  ><br />Learnt about AVR ATMEGA32 microcontroller and build
+                  small projects with it
+                </li>
+                <li>
+                  <span
+                    >Front End Web Development, One Million Arab Coders(Udacity) </span
+                  ><br />Learnt about HTML, CSS, and JavaScript.
+                </li>
+                <li>
+                  <span>Classic Control Basic Applications, Jelecom Egypt </span
+                  ><br />Learnt about the components of the classic control
+                  system, and how to build a control circuit with it.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <span>Software Development</span><br />
+                  HTML,CSS,JavaScript, Bash Shell Scripting, Django, SQL,
+                  MongoDB, Git, Linux operating System.
+                </li>
+                <li>
+                  <span>Embedded Software</span><br />C,C++,Python,Communication
+                  protocols (UART, SPI, I2C)
+                </li>
+                <li>
+                  <span>Embedded Software Testing</span><br />
+                  Python, Java.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects">
+      <div class="container"></div>
+      <h1 class="sub-title">Projects</h1>
+      <div class="project-list">
+        <div>
+          <h2>Database engine Using Bash Shell Script</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam enim
+            obcaecati distinctio. Itaque sapiente harum ea modi amet
+            necessitatibus enim pariatur nisi placeat, iure, nihil minima, neque
+            debitis quibusdam quam!
+          </p>
+          <a href="#">DB Engine on GitHub</a>
+        </div>
+        <div>
+          <h2>Breakout game Using vanilla JavaScript</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam enim
+            obcaecati distinctio. Itaque sapiente harum ea modi amet
+            necessitatibus enim pariatur nisi placeat, iure, nihil minima, neque
+            debitis quibusdam quam!
+          </p>
+          <a href="https://github.com/abdelaali2/Breakout_Game"
+            >Breakout Game On GitHub</a
+          >
+        </div>
+        <div>
+          <h2>Gesture-guided control system for Vehicle self-parking</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam enim
+            obcaecati distinctio. Itaque sapiente harum ea modi amet
+            necessitatibus enim pariatur nisi placeat, iure, nihil minima, neque
+            debitis quibusdam quam!
+          </p>
+          <a href="#">Vehicle Self Parking On GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope-circle-check"></i
+              >eng.mai.yasser.mohamed@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>0123456789</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/mai-yasser-3a3b941b3/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-square-github"></i></a>
+            </div>
+            <a
+              href="./Mai_Yasser_Resume_15-03-2023-09-09-29.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="#">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                cols="30"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyrights reserved© 2023</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
